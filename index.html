@@ -1,347 +1,443 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMKN 45 Jakarta</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-</head>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<body>
-
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">SMKN 45 Jakarta</div>
-        <ul class="nav-links">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Ekstrakurikuler</a></li>
-            <li><a href="#">Data Siswa</a></li>
-            <li><a href="#">Galeri</a></li>
-        </ul>
-        <a href="#" class="btn-kontak">Kontak</a>
+      <div class="logo">SMKN 45 Jakarta</div>
+      <ul class="nav-links">
+        <li><a href="#">Beranda</a></li>
+            <li><a href="#artikel">Berita</a></li>
+            <li><a href="#jurusan">Program Keahlian</a></li>
+            <li><a href="#eskul">Ekstrakulikuler</a></li>
+            <li><a href="#map">Lokasi</a></li>
+      </ul>
+      <a href="#" class="btn-kontak">Kontak</a>
     </nav>
+
 
     <!-- HERO SECTION -->
     <section class="hero">
-        <div class="hero-container">
-            <img src="assets/hero.png" class="hero-img" />
+      <div class="hero-container">
+        <img src="assets/hero.png" class="hero-img" />
 
-            <div class="hero-overlay"></div>
 
-            <div class="hero-text">
-                <h1>Selamat Datang di SMKN 45 Jakarta</h1>
-                <p>
-                    Sekolah dengan lingkungan belajar modern, fasilitas lengkap, dan program unggulan untuk
-                    membentuk generasi siap kerja dan berkarakter.
-                </p>
-            </div>
+        <div class="hero-overlay"></div>
+
+
+        <div class="hero-text">
+          <h1>Selamat Datang di SMKN 45 Jakarta</h1>
+          <p>
+            Sekolah dengan lingkungan belajar modern, fasilitas lengkap, dan
+            program unggulan untuk membentuk generasi siap kerja dan
+            berkarakter.
+          </p>
         </div>
+      </div>
     </section>
+
 
     <!-- ARTIKEL SECTION -->
-    <section class="artikel-section">
-        <div class="artikel-header">
-            <h2>Berita Terbaru</h2>
-            <a href="listArtikel.html" class="lihat-link">Lihat Selengkapnya →</a>
+    <section id="artikel" class="artikel-section">
+      <div class="artikel-header">
+        <h2>Berita Terbaru</h2>
+        <a href="listArtikel.html" class="lihat-link">Lihat Selengkapnya →</a>
+      </div>
+
+
+      <div class="artikel-grid">
+        <!-- Card Besar Kiri -->
+        <div class="artikel-card big">
+          <img src="assets/artikel1.png" class="artikel-img" />
+          <div class="artikel-overlay"></div>
+          <div class="artikel-text">
+            <h3>
+              EduTrip Kota Tua: Menyusuri Sejarah, Seni, dan Budaya Bersama
+              Siswa-Siswi Kelas XI
+            </h3>
+            <p>Senin, 1 Des 2025</p>
+          </div>
         </div>
 
-        <div class="artikel-grid">
 
-            <!-- Card Besar Kiri -->
-            <div class="artikel-card big">
-                <img src="assets/artikel1.png" class="artikel-img">
-                <div class="artikel-overlay"></div>
-                <div class="artikel-text">
-                    <h3>EduTrip Kota Tua: Menyusuri Sejarah, Seni, dan Budaya Bersama Siswa-Siswi Kelas XI</h3>
-                    <p>Senin, 1 Des 2025</p>
-                </div>
+        <div class="right-column">
+          <!-- Card Kanan Atas -->
+          <div class="artikel-card small">
+            <img src="assets/artikel2.png" class="artikel-img" />
+            <div class="artikel-overlay"></div>
+            <div class="artikel-text">
+              <h3>Peringatan Hari Guru 2025 di SMKN 45 Jakarta</h3>
+              <p>Senin, 1 Des 2025</p>
             </div>
+          </div>
 
-            <div class="right-column">
 
-                <!-- Card Kanan Atas -->
-                <div class="artikel-card small">
-                    <img src="assets/artikel2.png" class="artikel-img">
-                    <div class="artikel-overlay"></div>
-                    <div class="artikel-text">
-                        <h3>Peringatan Hari Guru 2025 di SMKN 45 Jakarta</h3>
-                        <p>Senin, 1 Des 2025</p>
-                    </div>
-                </div>
-
-                <!-- Card Kanan Bawah -->
-                <div class="artikel-card small">
-                    <img src="assets/artikel3.png" class="artikel-img">
-                    <div class="artikel-overlay"></div>
-                    <div class="artikel-text">
-                        <h3>Kegiatan Verifikasi 31 Kepala Sekolah dan Verifikator Sudin Jakarta Barat II</h3>
-                        <p>Selasa, 25 Nov 2025</p>
-                    </div>
-                </div>
-
+          <!-- Card Kanan Bawah -->
+          <div class="artikel-card small">
+            <img src="assets/artikel3.png" class="artikel-img" />
+            <div class="artikel-overlay"></div>
+            <div class="artikel-text">
+              <h3>
+                Kegiatan Verifikasi 31 Kepala Sekolah dan Verifikator Sudin
+                Jakarta Barat II
+              </h3>
+              <p>Selasa, 25 Nov 2025</p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
+
     <!-- KEHALIAN SECTION -->
-   <section class="program-section">
-    <h2 class="program-title">Program Keahlian</h2>
+    <section id="jurusan" class="program-section">
+      <h2 class="program-title">Program Keahlian</h2>
 
-    <div class="program-slider" id="programSlider">
 
+      <div class="program-slider" id="programSlider">
         <!-- CARD 1 -->
         <div class="program-card">
-            <div class="program-img-box">
-                <img src="assets/keahlian.png" class="program-img">
-            </div>
-            <div class="program-body">
-                <h3>Akuntansi dan Keuangan Lembaga</h3>
-                <p>Mencatat transaksi, menyusun laporan keuangan, menghitung biaya produksi, serta mengelola penjualan.</p>
-            </div>
+          <div class="program-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1311&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="program-img"
+            />
+          </div>
+          <div class="program-body">
+            <h3>Akuntansi dan Keuangan Lembaga</h3>
+            <p>
+              Mencatat transaksi, menyusun laporan keuangan, menghitung biaya
+              produksi, serta mengelola penjualan.
+            </p>
+          </div>
         </div>
+
 
         <!-- CARD 2 -->
         <div class="program-card">
-            <div class="program-img-box">
-                <img src="assets/keahlian.png" class="program-img">
-            </div>
-            <div class="program-body">
-                <h3>Otomatisasi dan Tata Kelola Perkantoran (OTKP)</h3>
-                <p>Mengerjakan pengetikan cepat, menyusun surat niaga, mengelola arsip, serta tugas kesekretariatan.</p>
-            </div>
+          <div class="program-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1711606815631-38d32cdaec3e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="program-img"
+            />
+          </div>
+          <div class="program-body">
+            <h3>Otomatisasi dan Tata Kelola Perkantoran (OTKP)</h3>
+            <p>
+              Mengerjakan pengetikan cepat, menyusun surat niaga, mengelola
+              arsip, serta tugas kesekretariatan.
+            </p>
+          </div>
         </div>
+
 
         <!-- CARD 3 -->
         <div class="program-card">
-            <div class="program-img-box">
-                <img src="assets/keahlian.png" class="program-img">
-            </div>
-            <div class="program-body">
-                <h3>Bisnis Daring dan Pemasaran (BDP)</h3>
-                <p>Melayani pembelian, melakukan pemasaran, menangani kasir, administrasi jual beli, dan perantara dagang.</p>
-            </div>
+          <div class="program-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="program-img"
+            />
+          </div>
+          <div class="program-body">
+            <h3>Bisnis Daring dan Pemasaran (BDP)</h3>
+            <p>
+              Melayani pembelian, melakukan pemasaran, menangani kasir,
+              administrasi jual beli, dan perantara dagang.
+            </p>
+          </div>
         </div>
+
 
         <!-- CARD 4 -->
         <div class="program-card">
-            <div class="program-img-box">
-                <img src="assets/keahlian.png" class="program-img">
-            </div>
-            <div class="program-body">
-                <h3>Multimedia (MM)</h3>
-                <p>Mengolah gambar, animasi 2D, serta merekam dan menyunting audio-video.</p>
-            </div>
+          <div class="program-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="program-img"
+            />
+          </div>
+          <div class="program-body">
+            <h3>Multimedia (MM)</h3>
+            <p>
+              Mengolah gambar, animasi 2D, serta merekam dan menyunting
+              audio-video.
+            </p>
+          </div>
         </div>
-
-    </div>
-</section>
+      </div>
+    </section>
 
 
     <!-- ESKUL SECTION -->
-    <section class="ekskul-section">
-        <div class="ekskul-container">
-
-            <!-- BAGIAN GAMBAR (1 FOTO) -->
-            <div class="ekskul-image-single">
-                <img src="assets/eskul.png" alt="Ekstrakurikuler">
-            </div>
-
-            <!-- BAGIAN TEKS -->
-            <div class="ekskul-text">
-                <h2>Ekstrakulikuler<br>SMKN 45 Jakarta</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.
-                </p>
-
-                <div class="ekskul-grid">
-                    <div class="ekskul-card">
-                        <i class="ri-first-aid-kit-line"></i>
-                        <span>PMR WIRA</span>
-                    </div>
-
-                    <div class="ekskul-card">
-                        <i class="ri-basketball-line"></i>
-                        <span>BASKET</span>
-                    </div>
-
-                    <div class="ekskul-card">
-                        <i class="ri-english-input"></i>
-                        <span>ENGLISH CLUB</span>
-                    </div>
-
-                    <div class="ekskul-card">
-                        <i class="ri-volleyball-line"></i>
-                        <span>VOLY</span>
-                    </div>
-
-                    <div class="ekskul-card">
-                        <i class="ri-team-line"></i>
-                        <span>ROKRIS</span>
-                    </div>
-                </div>
-            </div>
-
+    <section id="eskul" class="ekskul-section">
+      <div class="ekskul-container">
+        <!-- BAGIAN GAMBAR (1 FOTO) -->
+        <div class="ekskul-image-single">
+          <img src="assets/eskul.png" alt="Ekstrakurikuler" />
         </div>
+
+
+        <!-- BAGIAN TEKS -->
+        <div class="ekskul-text">
+          <h2>Ekstrakulikuler<br />SMKN 45 Jakarta</h2>
+          <p>
+            Ruang bagi siswa untuk mengembangkan minat, bakat, kreativitas, dan mengasah kemampuan siswa di luar pembelajaran kelas.
+          </p>
+
+
+          <div class="ekskul-grid">
+            <div class="ekskul-card">
+              <i class="ri-first-aid-kit-line"></i>
+              <span>PMR WIRA</span>
+            </div>
+
+
+            <div class="ekskul-card">
+              <i class="ri-basketball-line"></i>
+              <span>BASKET</span>
+            </div>
+
+
+            <div class="ekskul-card">
+              <i class="ri-english-input"></i>
+              <span>ENGLISH CLUB</span>
+            </div>
+
+
+            <div class="ekskul-card">
+              <i class="ri-volleyball-line"></i>
+              <span>VOLY</span>
+            </div>
+
+
+            <div class="ekskul-card">
+              <i class="ri-team-line"></i>
+              <span>ROKRIS</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- PENGAJAR SECTION -->
     <section class="guru-section">
-        <h2>Pengajar di SMKN 45 Jakarta</h2>
+      <h2>Pengajar di SMKN 45 Jakarta</h2>
 
-        <div class="swiper guruSwiper">
-            <div class="swiper-wrapper">
 
-                <!-- CARD 1 -->
-                <div class="swiper-slide guru-card">
-                    <img src="assets/guru1.png" class="guru-photo" alt="">
-                    <div class="guru-info">
-                        <h3>Nama Guru</h3>
-                        <p>Guru PJOK</p>
-                    </div>
-                    <i class="ri-send-plane-2-line guru-icon"></i>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="swiper-slide guru-card">
-                    <img src="assets/guru2.png" class="guru-photo" alt="">
-                    <div class="guru-info">
-                        <h3>Nama Guru</h3>
-                        <p>Guru PJOK</p>
-                    </div>
-                    <i class="ri-send-plane-2-line guru-icon"></i>
-                </div>
-                <!-- CARD 3 -->
-                <div class="swiper-slide guru-card">
-                    <img src="assets/guru2.png" class="guru-photo" alt="">
-                    <div class="guru-info">
-                        <h3>Nama Guru</h3>
-                        <p>Guru PJOK</p>
-                    </div>
-                    <i class="ri-send-plane-2-line guru-icon"></i>
-                </div>
-                <!-- CARD 4 -->
-                <div class="swiper-slide guru-card">
-                    <img src="assets/guru2.png" class="guru-photo" alt="">
-                    <div class="guru-info">
-                        <h3>Nama Guru</h3>
-                        <p>Guru PJOK</p>
-                    </div>
-                    <i class="ri-send-plane-2-line guru-icon"></i>
-                </div>
-                <!-- CARD 5 -->
-                <div class="swiper-slide guru-card">
-                    <img src="assets/guru2.png" class="guru-photo" alt="">
-                    <div class="guru-info">
-                        <h3>Nama Guru</h3>
-                        <p>Guru PJOK</p>
-                    </div>
-                    <i class="ri-send-plane-2-line guru-icon"></i>
-                </div>
-                <!-- CARD 6 -->
-                <div class="swiper-slide guru-card">
-                    <img src="assets/guru2.png" class="guru-photo" alt="">
-                    <div class="guru-info">
-                        <h3>Nama Guru</h3>
-                        <p>Guru PJOK</p>
-                    </div>
-                    <i class="ri-send-plane-2-line guru-icon"></i>
-                </div>
-
-                <!-- Tambah slide sebanyak yang kamu butuh -->
+      <div class="swiper guruSwiper">
+        <div class="swiper-wrapper">
+          <!-- CARD 1 -->
+          <div class="swiper-slide guru-card">
+            <img src="assets/guru1.png" class="guru-photo" alt="" />
+            <div class="guru-info">
+              <h3>Nama Guru</h3>
+              <!-- Ganti Nama guru disini-->
+              <p>Guru PJOK</p>
+              <!-- Ganti Subjek guru disini-->
             </div>
+            <i class="ri-send-plane-2-line guru-icon"></i>
+          </div>
+
+
+          <!-- CARD 2 -->
+          <div class="swiper-slide guru-card">
+            <img src="assets/guru1.png" class="guru-photo" alt="" />
+            <div class="guru-info">
+              <h3>Nama Guru</h3>
+              <!-- Ganti Nama guru disini-->
+              <p>Guru PJOK</p>
+              <!-- Ganti Subjek guru disini-->
+            </div>
+            <i class="ri-send-plane-2-line guru-icon"></i>
+          </div>
+
+
+          <!-- CARD 3 -->
+          <div class="swiper-slide guru-card">
+            <img src="assets/guru1.png" class="guru-photo" alt="" />
+            <div class="guru-info">
+              <h3>Nama Guru</h3>
+              <!-- Ganti Nama guru disini-->
+              <p>Guru PJOK</p>
+              <!-- Ganti Subjek guru disini-->
+            </div>
+            <i class="ri-send-plane-2-line guru-icon"></i>
+          </div>
+
+
+          <!-- CARD 4 -->
+          <div class="swiper-slide guru-card">
+            <img src="assets/guru1.png" class="guru-photo" alt="" />
+            <div class="guru-info">
+              <h3>Nama Guru</h3>
+              <!-- Ganti Nama guru disini-->
+              <p>Guru PJOK</p>
+              <!-- Ganti Subjek guru disini-->
+            </div>
+            <i class="ri-send-plane-2-line guru-icon"></i>
+          </div>
+
+
+          <!-- CARD 5 -->
+          <div class="swiper-slide guru-card">
+            <img src="assets/guru1.png" class="guru-photo" alt="" />
+            <div class="guru-info">
+              <h3>Nama Guru</h3>
+              <!-- Ganti Nama guru disini-->
+              <p>Guru PJOK</p>
+              <!-- Ganti Subjek guru disini-->
+            </div>
+            <i class="ri-send-plane-2-line guru-icon"></i>
+          </div>
+
+
+          <!-- CARD 6 -->
+          <div class="swiper-slide guru-card">
+            <img src="assets/guru1.png" class="guru-photo" alt="" />
+            <div class="guru-info">
+              <h3>Nama Guru</h3>
+              <!-- Ganti Nama guru disini-->
+              <p>Guru PJOK</p>
+              <!-- Ganti Subjek guru disini-->
+            </div>
+            <i class="ri-send-plane-2-line guru-icon"></i>
+          </div>
+
+
+          <!-- Tambah slide sebanyak yang kamu butuh -->
         </div>
+      </div>
     </section>
+
 
     <!-- CEK VIDEO SECTION -->
     <section class="video-section">
-        <h2>Cek Video Terbaru dari SMKN 45 Jakarta</h2>
+      <div class="video-header">
+      <h2>Cek Video Terbaru dari SMKN 45 Jakarta</h2>
+      <a href="https://www.youtube.com/@SMKN45Jkt">Selengkapnya....</a>
+      </div>
 
-        <div class="video-layout">
 
-            <!-- VIDEO BESAR -->
-            <div class="video-left">
-                <div class="video-card big">
-                    <div class="video-overlay">
-                        <i class="ri-play-large-fill"></i>
-                    </div>
-                    <video class="video-element">
-                        <source src="assets/video1.mp4" type="video/mp4">
-                    </video>
-                </div>
+      <div class="video-layout">
+        <!-- VIDEO BESAR -->
+        <div class="video-left">
+          <a href="https://www.youtube.com/watch?v=OoCENFRkEF4" target="_blank">
+            <div class="video-card big">
+              <img
+                class="yt-thumb"
+                src="https://img.youtube.com/vi/OoCENFRkEF4/maxresdefault.jpg"
+              />
+              <div class="video-overlay">
+                <i class="ri-play-large-fill"></i>
+              </div>
             </div>
-
-            <!-- VIDEO KANAN -->
-            <div class="video-right">
-
-                <div class="video-card small">
-                    <div class="video-overlay">
-                        <i class="ri-play-large-fill"></i>
-                    </div>
-                    <video class="video-element">
-                        <source src="assets/video2.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-                <div class="video-card small">
-                    <div class="video-overlay">
-                        <i class="ri-play-large-fill"></i>
-                    </div>
-                    <video class="video-element">
-                        <source src="assets/video3.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-            </div>
+          </a>
         </div>
+        <div class="video-left">
+          <a href="https://www.youtube.com/watch?v=OoCENFRkEF4" target="_blank">
+            <div class="video-card big">
+              <img
+                class="yt-thumb"
+                src="https://img.youtube.com/vi/OoCENFRkEF4/maxresdefault.jpg"
+              />
+              <div class="video-overlay">
+                <i class="ri-play-large-fill"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video-left">
+          <a href="https://www.youtube.com/watch?v=OoCENFRkEF4" target="_blank">
+            <div class="video-card big">
+              <img
+                class="yt-thumb"
+                src="https://img.youtube.com/vi/OoCENFRkEF4/maxresdefault.jpg"
+              />
+              <div class="video-overlay">
+                <i class="ri-play-large-fill"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video-left">
+          <a href="https://www.youtube.com/watch?v=OoCENFRkEF4" target="_blank">
+            <div class="video-card big">
+              <img
+                class="yt-thumb"
+                src="https://img.youtube.com/vi/OoCENFRkEF4/maxresdefault.jpg"
+              />
+              <div class="video-overlay">
+                <i class="ri-play-large-fill"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+       
+         
     </section>
+
 
     <!-- LOKASI SEKOLAH -->
-    <section class="lokasi-section">
-        <div class="lokasi-map-card">
-            <div id="map"></div>
+    <section id="map" class="lokasi-section">
+      <div class="lokasi-map-card">
+        <div id="map"></div>
 
-            <!-- INFO CARD DI ATAS MAP -->
-            <div class="lokasi-info-overlay">
-                <h3>SMKN 45 Jakarta</h3>
-                <p>
-                    Jl. Kpbd Dalam, Sukabumi Sel., Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta
-                    11560
-                </p>
-                <!-- diganti sesuai lokasi -->
-                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3010903488052!2d106.77224697499041!3d-6.22397309376408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f12befeed7ff%3A0x5df156bdca16a26d!2sSMKN%2045%20Jakarta!5e0!3m2!1sen!2sid!4v1765263193110!5m2!1sen!2sid"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" target="_blank">Lihat Maps.....</a>
-            </div>
+
+        <!-- INFO CARD DI ATAS MAP -->
+        <div class="lokasi-info-overlay">
+          <h3>SMKN 45 Jakarta</h3>
+          <p>
+            Jl. Kpbd Dalam, Sukabumi Sel., Kec. Kb. Jeruk, Kota Jakarta Barat,
+            Daerah Khusus Ibukota Jakarta 11560
+          </p>
+          <!-- diganti sesuai lokasi -->
+          <a
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3010903488052!2d106.77224697499041!3d-6.22397309376408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f12befeed7ff%3A0x5df156bdca16a26d!2sSMKN%2045%20Jakarta!5e0!3m2!1sen!2sid!4v1765263193110!5m2!1sen!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            target="_blank"
+            >Lihat Maps.....</a
+          >
         </div>
+      </div>
     </section>
+
 
     <!-- FOOTER SECTION -->
     <footer class="footer-section">
-        <p>Official Website SMKN 45 Jakarta | Copyright © 2025 Official "SMKN 45 Jakarta"</p>
+      <p>
+        Official Website SMKN 45 Jakarta | Copyright © 2025 Official "SMKN 45
+        Jakarta"
+      </p>
     </footer>
-
-
-
-
-
-
-
-
 
 
     <!-- JS -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

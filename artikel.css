@@ -1,242 +1,342 @@
-/* NAVBAR*/
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+
+/* NAVBAR*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
+
 
 body {
-    background: #ffffff;
+  background: #ffffff;
 }
+
 
 .navbar {
-    width: 100%;
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(8px);
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: 0.8s ease;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.8s ease;
 }
+
 
 .navbar.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: 600;
-    color: #1e9c33;
+
+.logo a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e9c33;
 }
+
 
 .nav-links {
-    display: flex;
-    gap: 35px;
-    list-style: none;
+  display: flex;
+  gap: 35px;
+  list-style: none;
 }
+
 
 .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    transition: 0.3s;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  transition: 0.3s;
 }
+
 
 .nav-links a:hover {
-    color: #1e9c33;
+  color: #1e9c33;
 }
+
 
 .btn-kontak {
-    background: #1e9c33;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
+  background: #1e9c33;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
+
 .btn-kontak:hover {
-    background: #188229;
+  background: #188229;
 }
+
 
 /* JUDUL PAGE */
 /* ==== Section Artikel ==== */
 
+
 .artikel-section {
-    width: 100%;
-    padding: 90px 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  width: 100%;
+  padding: 90px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
+
 
 .artikel-header {
-    max-width: 900px;
+  max-width: 900px;
 }
+
 
 .title {
-    font-size: 60px;
-    font-weight: 800;
-    color: #1c501c;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #1c501c;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
 }
+
 
 .title span {
-    color: #2e7d32;
+  color: #2e7d32;
 }
 
+
 .subtitle {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #555;
-    max-width: 750px;
-    margin: 0 auto 40px auto;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
 }
+
 
 /* ==== Search Box ==== */
 
+
 .search-box {
-    width: 600px;
-    max-width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid #2e7d32;
-    padding: 12px 18px;
-    border-radius: 40px;
-    transition: 0.3s ease;
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #2e7d32;
+  padding: 12px 18px;
+  border-radius: 40px;
+  transition: 0.3s ease;
 }
+
 
 .search-box:hover {
-    box-shadow: 0px 0px 10px rgba(46, 177, 52, 0.3);
-    transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(46, 177, 52, 0.3);
+  transform: scale(1.02);
 }
+
 
 .search-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 17px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
 }
+
 
 .search-box button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: #2e7d32;
-    transition: 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #2e7d32;
+  transition: 0.2s ease;
 }
 
+
 .search-box button:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
+
 
 /* Responsive */
 
+
 @media (max-width: 768px) {
-    .title {
-        font-size: 40px;
-    }
+  .title {
+    font-size: 40px;
+  }
 
-    .subtitle {
-        font-size: 17px;
-    }
 
-    .search-box {
-        padding: 10px 15px;
-    }
+  .subtitle {
+    font-size: 17px;
+  }
+
+
+  .search-box {
+    padding: 10px 15px;
+  }
 }
+
 
 /* LIST BERITA */
 
+
 /* GRID */
 .news-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 35px; /* jarak antar-card seperti contoh */
-    padding: 30px;
-    max-width: 1300px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px; /* jarak antar-card seperti contoh */
+  padding: 30px;
+  max-width: 1300px;
+  margin: auto;
 }
+
 
 /* CARD */
 .news-card {
-    background: #fff;
-    border-radius: 16px;
-    border: 2px solid #d7eeda; /* hijau muda seperti contoh */
-    overflow: hidden;
-    transition: 0.25s ease;
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #d7eeda; /* hijau muda seperti contoh */
+  overflow: hidden;
+  transition: 0.25s ease;
 }
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* HOVER PREMIUM */
 .news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+
 
 /* GAMBAR */
 .news-card img {
-    width: 100%;
-    height: 195px; /* persis rasio contoh */
-    object-fit: cover;
+  width: 100%;
+  height: 195px; /* persis rasio contoh */
+  object-fit: cover;
 }
+
 
 /* KONTEN BAWAH */
 .news-info {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
+
 
 .news-info h3 {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.4;
-    margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 6px;
 }
 
+
 .news-info span {
-    font-size: 12px;
-    color: #666;
+  font-size: 12px;
+  color: #666;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+
 @media (max-width: 600px) {
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
+
+@media (max-width: 450px) {
+  .search-box {
+    max-width: 100px;
+  }
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* FOOTER */
 .footer-section {
-    width: 100%;
-    background-color: #3f982f; 
-    padding: 25px 0;
-    margin-top: 60px;
+  width: 100%;
+  background-color: #3f982f;
+  padding: 25px 0;
+  margin-top: 60px;
 }
 
+
 .footer-section p {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0.3px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3px;
 }
+
+
+@media (max-width: 768px) {
+  .footer-section p {
+    font-size: 16px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .artikel-section {
+    padding-bottom: 20px;
+  }
+  .artikel-header .title {
+    padding-top: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .artikel-header.subtitle {
+    font-size: 16px;
+  }
+  .artikel-header .search-box {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .artikel-header .title {
+    font-size: 32px;
+  }
+
+
+  .footer-section p {
+    font-size: 8px;
+  }
+}
+
+
 
